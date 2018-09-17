@@ -20,7 +20,7 @@ export const NavWrapper = styled.div({
   maxWidth: c.HEADER_WIDTH,
 });
 
-export const Logo = styled.div({
+export const Logo = styled.figure({
   width: 120,
 });
 
