@@ -1,38 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Header from '../components/header'
-import './index.css'
+import 'layouts/styles/styles.js';
+import { Main } from 'identity/wrappers/Main';
+import Navigation from 'components/Navigation';
+import Footer from 'components/Footer';
 
-const Layout = ({ children, data }) => (
-  <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
-    <Header siteTitle={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
-  </div>
-)
+const Layout = ({ children }) => (
+  <main>
+    <Navigation />
+    <Main>{children()}</Main>
+    <Footer />
+  </main>
+);
 
 Layout.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default Layout
+export default Layout;
 
 export const query = graphql`
   query SiteTitleQuery {
@@ -42,4 +29,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
