@@ -29,10 +29,20 @@ export const PageWrapper = styled.div(
 export const PageSection = styled.section(
   s.spacing({ margin: 'vertical-lg' }),
   {
+    display: 'flex',
     width: '100%',
   },
+  props => ({ justifyContent: props.alignSection }),
 );
 
-export const SectionText = styled.div`
-  max-width: ${remCalc(650)};
-`;
+export const SectionText = styled.article(
+  {
+    maxWidth: remCalc(650),
+    width: '100%',
+  },
+  props => ({ textAlign: props.textAlign }),
+);
+
+export const HeaderText = styled.header(props => ({
+  textAlign: props.textAlign,
+}));

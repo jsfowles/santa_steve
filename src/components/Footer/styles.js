@@ -2,6 +2,7 @@ import styled from 'react-emotion';
 import * as c from 'identity/constants';
 
 export const FooterContainer = styled.footer({
+  flexShrink: 0,
   height: 120,
   zIndex: 1000,
   width: '100%',

@@ -38,6 +38,8 @@ body {
   line-height: 1;
   background: #ffffff;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a:focus {
