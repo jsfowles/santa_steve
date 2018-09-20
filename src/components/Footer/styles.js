@@ -1,5 +1,5 @@
 import styled from 'react-emotion';
-import * as c from 'identity/constants';
+import * as c from '@identity/constants';
 
 export const FooterContainer = styled.footer({
   flexShrink: 0,
@@ -12,11 +12,15 @@ export const FooterContainer = styled.footer({
 
 export const FooterWrapper = styled.div({
   height: '100%',
-  margin: '0 auto',
+  margin: '0 7vw',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
   maxWidth: c.HEADER_WIDTH,
+
+  [c.DESKTOP]: {
+    margin: '0 auto',
+  },
 });
 
 export const Logo = styled.div({

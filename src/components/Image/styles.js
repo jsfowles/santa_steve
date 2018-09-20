@@ -1,6 +1,6 @@
 import styled from 'react-emotion';
 
-import * as c from 'identity/constants';
+import * as c from '@identity/constants';
 
 export const Img = styled.img(
   {

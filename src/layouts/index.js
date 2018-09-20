@@ -1,22 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// @flow
+import * as React from 'react';
 import Helmet from 'react-helmet';
 
-import 'layouts/styles/styles.js';
-import { Main, LayoutWrapper } from 'identity/wrappers/Main';
-import Navigation from 'components/Navigation';
-import Footer from 'components/Footer';
+import { Main, LayoutWrapper } from '@identity/wrappers/Main';
+import Navigation from '@components/Navigation';
+import Footer from '@components/Footer';
 
-const Layout = ({ children }) => (
+import './styles/styles.js';
+
+type Props = {
+  children: React.Node,
+};
+
+const Layout = ({ children }: Props) => (
   <LayoutWrapper>
     <Navigation />
     <Main>{children}</Main>
     <Footer />
   </LayoutWrapper>
 );
-
-Layout.propTypes = {
-  children: PropTypes.func,
-};
 
 export default Layout;

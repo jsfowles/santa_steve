@@ -1,0 +1,17 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^@components' -> '<PROJECT_ROOT>/src/components'
+module.name_mapper='^@identity' -> '<PROJECT_ROOT>/src/identity'
+module.name_mapper='^@containers' -> '<PROJECT_ROOT>/src/containers'
+module.name_mapper='^@lib' -> '<PROJECT_ROOT>/src/lib'
+module.name_mapper='^@layouts' -> '<PROJECT_ROOT>/src/layouts'
+module.name_mapper='^@server' -> '<PROJECT_ROOT>/server'
+
+[strict]

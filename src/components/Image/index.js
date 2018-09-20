@@ -1,9 +1,20 @@
+// @flow
 import React from 'react';
-
 import { Img } from './styles';
-import ImageLoader from 'containers/ImageLoader';
+import ImageLoader from '@containers/ImageLoader';
 
-const Image = ({ src, absolute, alt, fill, onLoad, style }) => (
+type Props = {
+  src?: ?string,
+  aspectRatio?: ?number,
+  framed?: ?boolean,
+  absolute?: ?boolean,
+  fill?: ?boolean,
+  alt?: ?string,
+  onLoad?: ?() => void,
+  style?: ?{},
+};
+
+const Image = ({ src, absolute, alt, fill, onLoad, style }: Props) => (
   <ImageLoader src={src}>
     {source => (
       <Img

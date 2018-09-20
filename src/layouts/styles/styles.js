@@ -74,7 +74,7 @@ a {
 }
 
 #nprogress .bar {
-  background: #e50a13;
+  background: #5DADE2;
 
   position: fixed;
   top: 0;
@@ -118,7 +118,7 @@ a {
 
 em { font-weight: 500; }
 a {
-  color: #e50a13;
+  color: #5DADE2;
 }
 
 .no-scroll { overflow: hidden; }

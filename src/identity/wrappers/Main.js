@@ -2,7 +2,7 @@ import styled from 'react-emotion';
 
 import * as s from '../spacing';
 import * as c from '../constants';
-import { remCalc } from 'lib/styleMethods';
+import { remCalc } from '@lib/styleMethods';
 
 export const Main = styled.main(
   ({ spacing }) => spacing && s.spacing(spacing),

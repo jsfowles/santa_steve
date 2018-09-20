@@ -5,10 +5,10 @@ import {
   DESKTOP,
   DESKTOP_HD,
   FONT_COLOR_BASE,
-} from 'identity/constants';
+} from '@identity/constants';
 
-import * as s from 'identity/spacing';
-import { remCalc } from 'lib/styleMethods';
+import * as s from '@identity/spacing';
+import { remCalc } from '@lib/styleMethods';
 
 const typeMapper = scale =>
   // First we need to map over the keys of the scale and reduce them to

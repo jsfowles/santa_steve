@@ -1,8 +1,8 @@
 import styled from 'react-emotion';
 
-import { remCalc } from 'lib/styleMethods';
-import * as c from 'identity/constants';
-import * as s from 'identity/spacing';
+import { remCalc } from '@lib/styleMethods';
+import * as c from '@identity/constants';
+import * as s from '@identity/spacing';
 
 export const PageWrapper = styled.div(
   ({ fullWidth }) => ({
@@ -46,3 +46,9 @@ export const SectionText = styled.article(
 export const HeaderText = styled.header(props => ({
   textAlign: props.textAlign,
 }));
+
+export const ImageWrapper = styled.figure({
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+});

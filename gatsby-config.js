@@ -31,7 +31,7 @@ module.exports = {
         autoLabel: true,
       },
     },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-resolve-src',
   ],
 };

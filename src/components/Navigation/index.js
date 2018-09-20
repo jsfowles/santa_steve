@@ -1,9 +1,8 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import Image from 'components/Image';
+import Image from '@components/Image';
 import { Nav, Logo, NavWrapper, NavLink, NavLinks } from './styles';
-import { PageWrapper } from 'identity/pageSections';
 
 const ROUTES = [
   { id: 0, name: 'Home', path: '/' },

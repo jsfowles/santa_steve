@@ -1,6 +1,6 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
-import Image from 'components/Image';
+import Image from '@components/Image';
 import {
   FooterContainer,
   Logo,
@@ -8,7 +8,6 @@ import {
   FooterLink,
   FooterLinks,
 } from './styles';
-import { PageWrapper } from 'identity/pageSections';
 
 const SOCIAL_LINKS = [
   { id: 0, name: 'Twitter', url: 'https://www.twitter.com' },

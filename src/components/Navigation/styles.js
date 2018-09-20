@@ -1,5 +1,5 @@
 import styled from 'react-emotion';
-import * as c from 'identity/constants';
+import * as c from '@identity/constants';
 
 export const Nav = styled.nav({
   height: 80,
@@ -13,11 +13,15 @@ export const Nav = styled.nav({
 
 export const NavWrapper = styled.div({
   height: '100%',
-  margin: '0 auto',
+  margin: '0 7vw',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
   maxWidth: c.HEADER_WIDTH,
+
+  [c.DESKTOP]: {
+    margin: '0 auto',
+  },
 });
 
 export const Logo = styled.figure({

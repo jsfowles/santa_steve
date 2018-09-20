@@ -1,0 +1,41 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "flowtype"],
+  "extends": ["airbnb", "prettier", "plugin:flowtype/recommended"],
+  "rules": {
+    "jsx-a11y/media-has-caption": 0,
+    "react/jsx-filename-extension": 0,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "react/no-unused-prop-types": 0,
+    "react/sort-comp": 0,
+    "camelcase": 0,
+    "array-bracket-spacing": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "globals": {
+    "SyntheticEvent": true,
+    "HTMLAnchorElement": true,
+    "NodeList": true,
+    "HTMLElement": true,
+    "fetch": true,
+    "Image": true,
+    "window": true,
+    "history": true,
+    "document": true,
+    "localStorage": true,
+    "test": true,
+    "expect": true,
+    "describe": true,
+    "mixpanel": true,
+    "location": true,
+    "XMLHttpRequest": true,
+    "navigator": true
+  }
+}

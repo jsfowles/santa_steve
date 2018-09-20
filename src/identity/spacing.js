@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable';
 
-import { remCalc } from 'lib/styleMethods';
+import { remCalc } from '@lib/styleMethods';
 import _ from 'lodash';
 import * as c from './constants';
 
