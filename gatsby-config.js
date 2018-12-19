@@ -4,9 +4,16 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-fonts`, // eslint-disable-line
+      resolve: `gatsby-plugin-web-font-loader`, // eslint-disable-line
       options: {
-        fonts: [`Roboto\:300,400,500`, `source sans`, 'Playfair Display:'], // eslint-disable-line
+        google: {
+          families: [
+            `Mountains of Christmas`,
+            `Roboto\:300,400,500`,
+            `source sans`,
+            `Playfair Display`,
+          ], // eslint-disable-line
+        },
       },
     },
     {

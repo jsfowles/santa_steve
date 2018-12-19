@@ -78,7 +78,7 @@ export const GRID_TOTAL_COLUMNS = 12;
  */
 
 export const FONT_FAMILY_SANS_SERIF = 'Roboto';
-export const FONT_FAMILY_SERIF = 'Playfair Display';
+export const FONT_FAMILY_SERIF = 'Mountains of Christmas';
 export const FONT_FAMILY_BASE = FONT_FAMILY_SANS_SERIF;
 export const FONT_COLOR_BASE = COLORS.black001;
 
@@ -104,7 +104,7 @@ export const FONT_COLOR_HEADINGS = FONT_COLOR_BASE;
 
 export const TYPE_SCALE = {
   H1: {
-    BASE: 36,
+    BASE: 52,
     DESKTOP: 52,
     DESKTOP_HD: 52,
     LINE_HEIGHT: LINE_HEIGHT_HEADINGS,

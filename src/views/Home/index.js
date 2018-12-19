@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from '@components/Image';
 import Layout from '@layouts';
+import TypeScale from '@identity/type';
 
 import {
   PageWrapper,
@@ -16,18 +17,18 @@ const Home = () => (
   <Layout>
     <PageWrapper fullWidth>
       <HeaderText textAlign="center">
-        <H1>jsfowles - Gatsby Boilerplate</H1>
+        <TypeScale.H1 color="white">Merry Christmas</TypeScale.H1>
       </HeaderText>
       <PageSection alignSection="center">
         <SectionText textAlign="left">
           <HeaderText textAlign="center">
-            <H3>This is the Home page</H3>
+            <TypeScale.H3 color="white">
+              From: Eleanor, Nolan, Jax, Peri, and Jacob
+            </TypeScale.H3>
           </HeaderText>
-          <ImageWrapper width="60px">
-            <Image src={require('../../../static/images/reel.jpg')} />
-          </ImageWrapper>
-
-          <P>
+          <ImageWrapper width="60px" />
+          {/* 
+          <TypeScale.P color="white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
             dignissim eros in enim bibendum pharetra. Interdum et malesuada
             fames ac ante ipsum primis in faucibus. Donec in vulputate arcu.
@@ -42,8 +43,8 @@ const Home = () => (
             nisi in bibendum. Vestibulum ante ipsum primis in faucibus orci
             luctus et ultrices posuere cubilia Curae; Aliquam maximus arcu eget
             sem lacinia pulvinar. Etiam massa magna,
-          </P>
-          <P>
+          </TypeScale.P>
+          <TypeScale.P color="white">
             Vestibulum ullamcorper bibendum sagittis. Quisque vehicula volutpat
             lorem vel hendrerit. Quisque neque turpis, sodales et accumsan eget,
             blandit eu est. Nunc posuere ante et ullamcorper faucibus. Nulla
@@ -61,8 +62,8 @@ const Home = () => (
             metus id ligula ultricies pharetra. Mauris nec erat in leo feugiat
             egestas. Donec tincidunt erat nec nulla pretium congue. Mauris
             venenatis lectus in urna bibendum, at
-          </P>
-          <P>
+          </TypeScale.P>
+          <TypeScale.P color="white">
             ullamcorper velit laoreet. Integer eu facilisis velit. Maecenas
             pulvinar, diam id vehicula tempus, ipsum odio auctor orci, in congue
             odio odio ut augue. Curabitur ut massa felis. Etiam viverra purus ac
@@ -77,7 +78,7 @@ const Home = () => (
             elit et justo rutrum blandit. Nam imperdiet, dui sodales placerat
             mollis, lectus odio eleifend ante, in faucibus massa nisl nec
             tellus.
-          </P>
+          </TypeScale.P> */}
         </SectionText>
       </PageSection>
     </PageWrapper>

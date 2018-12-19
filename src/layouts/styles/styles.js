@@ -36,7 +36,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-family: 'Roboto';
   line-height: 1;
-  background: #ffffff;
+  background: #bd4651;
   height: 100vh;
   display: flex;
   flex-direction: column;

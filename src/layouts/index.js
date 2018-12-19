@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { Main, LayoutWrapper } from '@identity/wrappers/Main';
 import Navigation from '@components/Navigation';
 import Footer from '@components/Footer';
+import SnowStorm from 'react-snowstorm';
 
 import './styles/styles.js';
 
@@ -14,9 +15,15 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <LayoutWrapper>
-    <Navigation />
+    <SnowStorm
+      animationInterval={120}
+      snowStick={false}
+      followMouse={false}
+      freezeOnBlur={false}
+    />
+    {/* <Navigation /> */}
     <Main>{children}</Main>
-    <Footer />
+    {/* <Footer /> */}
   </LayoutWrapper>
 );
 
