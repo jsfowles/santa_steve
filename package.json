@@ -9,7 +9,7 @@
     "emotion": "^9.2.9",
     "emotion-server": "^9.2.9",
     "gatsby": "^2.0.5",
-    "gatsby-cli": "^2.4.1",
+    "gatsby-cli": "^2.4.7",
     "gatsby-link": "^2.0.1",
     "gatsby-plugin-babel": "^1.0.0",
     "gatsby-plugin-emotion": "^2.0.5",
@@ -27,6 +27,7 @@
     "react-emotion": "^9.2.9",
     "react-helmet": "^5.2.0",
     "react-no-ssr": "^1.1.0",
+    "react-reveal-text": "^0.1.1",
     "react-snowstorm": "^0.0.2",
     "serve": "^10.0.1"
   },
@@ -43,7 +44,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.2",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^3.19.0",

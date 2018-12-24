@@ -27,7 +27,7 @@ export const PageWrapper = styled.div(
 );
 
 export const PageSection = styled.section(
-  s.spacing({ margin: 'vertical-lg' }),
+  // s.spacing({ margin: 'vertical-lg' }),
   {
     display: 'flex',
     width: '100%',
